@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.muibox {
+    background-color: #043b79;
+    color: #fff;
+    font-size: small;
+    padding: 0 3rem 0 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.muibox .marquee-container {
+    overflow: hidden;
+}
+
+.muibox .marquee-container .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    animation: marquee 70s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
